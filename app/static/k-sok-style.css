@@ -1,0 +1,108 @@
+div.nav {
+        width:100%; 
+	position:fixed !important; position:absolute; 
+        top:0px; left:0px; height:45px; 
+	background-color: #CAE5FF;
+	border-bottom: solid 1px; padding: 0px 0px 0px 0px; 
+	vertical-align: middle;
+}
+
+div.nav_logo { float: left; background-color: white; vertical-align: middle; }
+div.nav_logo img { vertical-align:middle; height: 45px; }
+div.nav_links { font-size: 16px; font-weight: bold; padding: 10px 12px; float:left; vertical-align: middle; text-align: middle; }
+
+div.nav_links a:visited { color: black; }
+div.nav_buttons { float: right; vertical-align: middle; padding: 6px 6px; }
+div.nav_buttons input[type="submit"] { font-size: 14px; }
+
+div.copyright {
+    bottom:0; left:0; height: 10px; width: 100%;
+    font-size: 8px; text-align: right;
+    background-color: white;
+}
+
+body {
+	left-margin: 0; top-margin: 0; padding:40px 0px 5px 0px;
+	font-size: 16px; border: 1;
+	font-family:"ＭＳ Ｐゴシック","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ","Meiryo",Osaka,verdana,arial,clean,sans-serif;
+}
+
+#searchTable table { margin-left: 10px; border: solid 1px #DCDCDC; border-collapse: collapse; padding:10px;} 
+#searchTable td { background-color:#EEEEEE; }
+
+table.list { font-size: 16px; border-collapse:collapse; empty-cells: show; }
+table.list th { background-color:#99CCFF;}
+
+body.runner {
+	left-margin: 0; top-margin: 0; padding:0px 0px 0px 0px;
+}
+body.mobile table.list { width: 100%;}
+body.runner table.list { font-size: 16px; border-collapse:collapse; empty-cells: show; }
+body.runner table.list th { background-color:#99CCFF; border:1 solid; font-weight: bold;}
+body.runner table.list td { border:1 solid}
+body.runner table.list td.footer { border:none}
+
+table.races { font-size: 16px; border-collapse:collapse; border:1 solid; empty-cells: show; }
+table.races th { background-color:#99CCFF; border:1 solid; font-weight: bold;}
+table.races td { border-left: 1 solid; border-right: 1 solid; }
+table.races tr.borderyes td { border-top:1 solid}
+table.races tr.borderno td { border-top:none}
+table.races tr.oddRow   { background-color: white; }
+table.races tr.evenRow  { background-color: #EEEEEE; }
+
+table.live { font-size: 16px; border-collapse:collapse; empty-cells: show; width:95%; height:95%;}
+table.live th { padding: 20px 8px;  background-color:#99CCFF;}
+table.live td { padding: 20px 8px; text-align: left; white-space:nowrap; }
+
+table.tblview { margin-left: 10px; font-size: 16px; border-collapse:collapse; empty-cells: show; }
+table.tblview td { background-color:#EEEEEE; }
+
+th {
+	text-align: left; font-weight: normal; padding: 8px 10px;
+	background-color: #99CCFF; border-right: solid 0px;
+}
+
+th.entryCheck { width: 40px; }
+
+td { padding: 8px 10px; text-align: left; white-space:nowrap; }
+td.left  { text-align: left; }
+
+tr.bottomborder    { border-bottom: dotted 1px; } 
+tr.oddRow          { background-color: #DCDCDC; }
+tr.evenRow         { background-color: #EEEEEE; }
+tr.deletedRow      { background-color: darkgrey; }
+tr.timelineGoal    { border-bottom: solid 1px; background-color: #C2FF85; }
+tr.timelineYameta  { border-bottom: solid 1px; background-color: lightgrey; } 
+tr.timelineLatest  { border-bottom: solid 1px; background-color: yellow; } 
+tr.timeline2ndLastLap   { border-bottom: solid 1px; background-color: LightCyan; }
+tr.timelineLastLap   { border-bottom: solid 1px; background-color: Cyan; }
+tr.timelineRow     { border-bottom: solid 1px; background-color: #FFFFCC; } 
+tr.timelineRowHor  { border-bottom: solid 1px; } 
+tr.timelineStart   { border-bottom: solid 1px; } 
+tr.alreadyPrinted  { border-bottom: solid 1px; background-color: lightgrey; }
+tr.entrySame { text-align: left; background-color: #AA66FF; }
+tr.left  { text-align: left; }
+
+
+input[type="text"]    { font-size: 16px; text-align: left; }
+input[type="textbox"] { text-align: center; }
+input[type="submit"]  { padding: 5px 5px; }
+input.menu[type="submit"]  { font-size:16px; text-align:center; height:40; width:300px; }
+input.list[type="submit"]  { font-size:14px; text-align:center; height:30; width:100px; }
+input.list[type="button"]  { font-size:14px; text-align:center; height:30; width:100px; }
+
+select { font-size: 16px; }
+
+.clear { clear: both; }
+
+ul.menu li {
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-left: 30px;
+}
+
+hr { border: 0; height: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+
+form { display: inline; } 
+button::-moz-focus-inner { margin: -1px; padding: 0; border: 0; }
