@@ -4,34 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UUM Day2 Digest</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='k-sok-style.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>UUM2023 better result</title>
 </head>
 <body>
-    <header>
-        <h1>UUM{{day}}日目選手通過状況一覧</h1>
-        <ul class="runner-count header">
-            <li>S</li>
-            <li>CP1</li>
-            <li>CP2</li>
-            <li>CP3</li>
-            <li>CP4</li>
-            <li>G</li>
-            <li></li>
-        </ul>
-        <ul class="runner-count content">
-            <li></li>
-            <li>{{runnerCount["S"]}}</li>
-            <li>{{runnerCount["CP1"]}}</li>
-            <li>{{runnerCount["CP2"]}}</li>
-            <li>{{runnerCount["CP3"]}}</li>
-            <li>{{runnerCount["CP4"]}}</li>
-            <li>{{runnerCount["G"]}}</li>
-        </ul>
-    </header>
-    <section class="container">
-        {{srcTable | safe}}
-    </section>
+    <div><a href="./day1">1日目</a></div>
+    <div><a href="./day2">2日目</a></div>
 </body>
 </html>

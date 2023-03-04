@@ -10,8 +10,6 @@ app = Flask(__name__)
 @app.route("/")
 def hello():
     srcTable, runnerCount = scrp.scrapeUnionDay2()
-    # return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount)
-    # print(runnerCount)
     return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount, day=2)
 
 
@@ -24,7 +22,13 @@ def index():
 @app.route("/day1")
 def day1():
     srcTable, runnerCount = scrp.scrapeUnionDay1()
-    return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount, day=1)
+    return render_template("day.html", srcTable=srcTable, runnerCount=runnerCount, day=1)
+
+
+@app.route("/day2")
+def day2():
+    srcTable, runnerCount = scrp.scrapeUnionDay2()
+    return render_template("day.html", srcTable=srcTable, runnerCount=runnerCount, day=2)
 
 
 # おまじない
