@@ -12,7 +12,7 @@ def hello():
     srcTable, runnerCount = scrp.scrapeUnionDay2()
     # return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount)
     # print(runnerCount)
-    return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount)
+    return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount, day=2)
 
 
 # 「/index」へアクセスがあった場合に、「index.html」を返す
@@ -24,7 +24,7 @@ def index():
 @app.route("/day1")
 def day1():
     srcTable, runnerCount = scrp.scrapeUnionDay1()
-    return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount)
+    return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount, day=1)
 
 
 # おまじない
