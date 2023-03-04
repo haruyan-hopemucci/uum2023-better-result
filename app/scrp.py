@@ -10,10 +10,10 @@ from bs4 import BeautifulSoup
 #     "G": 0
 # }
 
-# urlFull = "http://www.k-sok.com/corunners/timeline?raceId=5617"
-# urlHalf = "http://www.k-sok.com/corunners/timeline?raceId=5618"
-urlFull = "http://www.k-sok.com/corunners/timeline?raceId=5620"
-urlHalf = "http://www.k-sok.com/corunners/timeline?raceId=5619"
+urlFull1 = "http://www.k-sok.com/corunners/timeline?raceId=5617"
+urlHalf1 = "http://www.k-sok.com/corunners/timeline?raceId=5618"
+urlFull2 = "http://www.k-sok.com/corunners/timeline?raceId=5620"
+urlHalf2 = "http://www.k-sok.com/corunners/timeline?raceId=5619"
 
 
 def scrape(runnerCount, url):
@@ -62,7 +62,7 @@ def scrape(runnerCount, url):
     return "<table><tbody>" + "".join(outputTr) + "</tbody></table>"
 
 
-def scrapeUnion():
+def scrapeUnionDay1():
     runnerCount = {
         "S": 0,
         "CP1": 0,
@@ -72,6 +72,21 @@ def scrapeUnion():
         "G": 0
     }
 
-    srcTable1 = scrape(runnerCount, urlFull)
-    srcTable2 = scrape(runnerCount, urlHalf)
+    srcTable1 = scrape(runnerCount, urlFull1)
+    srcTable2 = scrape(runnerCount, urlHalf1)
+    return str(srcTable1)+str(srcTable2), runnerCount
+
+
+def scrapeUnionDay2():
+    runnerCount = {
+        "S": 0,
+        "CP1": 0,
+        "CP2": 0,
+        "CP3": 0,
+        "CP4": 0,
+        "G": 0
+    }
+
+    srcTable1 = scrape(runnerCount, urlFull2)
+    srcTable2 = scrape(runnerCount, urlHalf2)
     return str(srcTable1)+str(srcTable2), runnerCount

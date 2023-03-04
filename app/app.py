@@ -9,7 +9,7 @@ app = Flask(__name__)
 # 「/」へアクセスがあった場合に、"Hello World"の文字列を返す
 @app.route("/")
 def hello():
-    srcTable, runnerCount = scrp.scrapeUnion()
+    srcTable, runnerCount = scrp.scrapeUnionDay2()
     # return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount)
     # print(runnerCount)
     return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount)
@@ -19,6 +19,12 @@ def hello():
 @ app.route("/index")
 def index():
     return hello()
+
+
+@app.route("/day1")
+def day1():
+    srcTable, runnerCount = scrp.scrapeUnionDay1()
+    return render_template("index.html", srcTable=srcTable, runnerCount=runnerCount)
 
 
 # おまじない
