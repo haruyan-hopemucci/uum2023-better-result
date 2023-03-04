@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UUM Day2 Digest</title>
+    <link rel="stylesheet" href="http://www.k-sok.com/corunners/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>UUM2日目選手通過状況一覧</h1>
+    <ul class="runner-count header">
+        <li>S</li>
+        <li>CP1</li>
+        <li>CP2</li>
+        <li>CP3</li>
+        <li>CP4</li>
+        <li>G</li>
+        <li></li>
+    </ul>
+    <ul class="runner-count content">
+        <li></li>
+        <li>{{runnerCount["S"]}}</li>
+        <li>{{runnerCount["CP1"]}}</li>
+        <li>{{runnerCount["CP2"]}}</li>
+        <li>{{runnerCount["CP3"]}}</li>
+        <li>{{runnerCount["CP4"]}}</li>
+        <li>{{runnerCount["G"]}}</li>
+    </ul>
+    <section class="container">
+        {{srcTable | safe}}
+    </section>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+  font-size: 4vw;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+td {
+  text-overflow: ellipsis;
+}
+
+section.container {
+  max-width: 95vw;
+  overflow: hidden;
+}
+
+ul.runner-count {
+  display: grid;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  max-width: 95vw;
+}
+ul.runner-count li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border: 1px solid #ccc;
+}
+ul.runner-count.header {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+ul.runner-count.content {
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}/*# sourceMappingURL=style.css.map */
