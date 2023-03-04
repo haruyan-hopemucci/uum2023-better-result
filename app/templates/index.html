@@ -9,25 +9,27 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <h1>UUM{{day}}日目選手通過状況一覧</h1>
-    <ul class="runner-count header">
-        <li>S</li>
-        <li>CP1</li>
-        <li>CP2</li>
-        <li>CP3</li>
-        <li>CP4</li>
-        <li>G</li>
-        <li></li>
-    </ul>
-    <ul class="runner-count content">
-        <li></li>
-        <li>{{runnerCount["S"]}}</li>
-        <li>{{runnerCount["CP1"]}}</li>
-        <li>{{runnerCount["CP2"]}}</li>
-        <li>{{runnerCount["CP3"]}}</li>
-        <li>{{runnerCount["CP4"]}}</li>
-        <li>{{runnerCount["G"]}}</li>
-    </ul>
+    <header>
+        <h1>UUM{{day}}日目選手通過状況一覧</h1>
+        <ul class="runner-count header">
+            <li>S</li>
+            <li>CP1</li>
+            <li>CP2</li>
+            <li>CP3</li>
+            <li>CP4</li>
+            <li>G</li>
+            <li></li>
+        </ul>
+        <ul class="runner-count content">
+            <li></li>
+            <li>{{runnerCount["S"]}}</li>
+            <li>{{runnerCount["CP1"]}}</li>
+            <li>{{runnerCount["CP2"]}}</li>
+            <li>{{runnerCount["CP3"]}}</li>
+            <li>{{runnerCount["CP4"]}}</li>
+            <li>{{runnerCount["G"]}}</li>
+        </ul>
+    </header>
     <section class="container">
         {{srcTable | safe}}
     </section>

@@ -1,7 +1,11 @@
-body {
+html {
   font-size: 4vw;
   font-family: sans-serif;
   margin: 0;
+  padding: 0;
+}
+
+body {
   padding: 0;
 }
 
@@ -14,8 +18,18 @@ td {
   text-overflow: ellipsis;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 95vw;
+  height: 7rem;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
 section.container {
   max-width: 95vw;
+  margin-top: 7rem;
   overflow: hidden;
 }
 
