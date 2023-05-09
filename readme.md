@@ -21,7 +21,7 @@
 
 ## アプリ実行イメージ
 
-![](./docs/screenshot.png)
+![](./docs/screenshot.jpg)
 
 ## 技術情報
 
